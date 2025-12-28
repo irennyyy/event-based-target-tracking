@@ -206,3 +206,31 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ===== Project-specific (event tracking) =====
+
+# macOS junk
+.DS_Store
+
+# Raw datasets / preprocessed frames (do NOT commit)
+Data/**
+!Data/README.md
+!Data/.gitkeep
+
+# Large media / archives
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+
+# Generated experiment outputs
+*_exp/
+outputs/
+results/
+runs/
+logs/
+overlays*/
+C_event_frames/
+Old_video_compare/
+sae_frames/
