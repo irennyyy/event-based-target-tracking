@@ -34,3 +34,12 @@ See: `Data/README.md`
 python -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+
+## Main scripts (code navigation)
+- `src/sae/stage2_candidates_topk.py` : Top-K + NMS candidate extraction
+- `src/sae/stage3_kalman_tracker_topk.py` : Kalman tracking driven by Top-K candidates
+- `src/sae/stage3_5_eval_tracking.py` : tracking evaluation (metrics + speed buckets)
+- `src/sae/tools/stage2_topk_report.py` : stage2 report
+- `src/sae/tools/stage3_7_plot_report.py` : summary plots/report
+- `src/sae/tools/extract_worst_innovation.py` : worst-case (innovation) frame mining
+
