@@ -1,1 +1,7 @@
-
+numpy
+pandas
+scipy
+matplotlib
+opencv-python
+tqdm
+PyYAML
