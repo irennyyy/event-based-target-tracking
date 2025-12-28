@@ -1,0 +1,72 @@
+{
+  "adoption": {
+    "frames_with_det": 29750,
+    "frames_accepted": 27087,
+    "adoption_rate": 0.9104873949579831
+  },
+  "jitter": {
+    "det_rms_px": 13.966972073620616,
+    "kf_rms_px": 0.17023455269252086,
+    "improvement": 0.9878116350634049
+  },
+  "innovation": {
+    "N": 27087,
+    "P50": 22.258820068281896,
+    "P90": 36.968924301459374,
+    "P95": 40.24119775265682,
+    "mean": 22.45120787299524
+  },
+  "continuity": {
+    "frames_total": 29750,
+    "gaps_count": 246,
+    "gap_len_mean": 10.825203252032521,
+    "gap_len_max": 136,
+    "tracks_count": 247,
+    "track_len_mean": 109.66396761133603,
+    "track_len_max": 1520
+  },
+  "by_speed": {
+    "bins": [
+      0.0,
+      0.05,
+      0.2,
+      999.0
+    ],
+    "buckets": [
+      {
+        "range": [
+          0.0,
+          0.05
+        ],
+        "frames": 1310,
+        "adoption_rate": 0.8351145038167939,
+        "det_jitter_rms_px": 20.562178080137024,
+        "kf_jitter_rms_px": 12.149407223820992,
+        "improvement": 0.40913811871139916
+      },
+      {
+        "range": [
+          0.05,
+          0.2
+        ],
+        "frames": 10741,
+        "adoption_rate": 0.9194674611302486,
+        "det_jitter_rms_px": 15.96176723921337,
+        "kf_jitter_rms_px": 1.7301742042040533,
+        "improvement": 0.8916050974635488
+      },
+      {
+        "range": [
+          0.2,
+          999.0
+        ],
+        "frames": 17694,
+        "adoption_rate": 0.9105911608454843,
+        "det_jitter_rms_px": 15.6997106935037,
+        "kf_jitter_rms_px": 1.2575369680383703,
+        "improvement": 0.9199006279422257
+      }
+    ],
+    "gt_shift_us": 1468939802856573.0
+  }
+}
