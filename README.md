@@ -18,10 +18,12 @@ See: `Data/README.md`
 ---
 
 ## Repo Structure
-- `src/` pipeline source code
-- `scripts/` runnable entrypoints
-- `Data/` input interface (datasets not committed)
-- `docs/` documentation / role lens (optional)
+- `src/sae/` pipeline scripts
+- `src/sae/tools/` reporting / overlays / audits
+- `src/sae/utils/` video helpers
+- `scripts/` one-command run scripts
+- `Data/` data interface (datasets not committed)
+- `docs/` documentation (optional)
 - `assets/` demo figures (optional)
 
 ---
