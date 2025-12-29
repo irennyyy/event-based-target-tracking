@@ -1,0 +1,44 @@
+# Metrics & Plots (How to read results)
+
+This repo produces metrics JSON and diagnostic plots per sequence (stored under `assets/<SEQ>/`).
+
+## Core tracking metrics (Stage 3)
+- **Adoption rate**  
+  Fraction of frames where the tracker successfully adopts a measurement (higher is better).
+
+- **Jitter RMS (raw vs KF)**  
+  RMS of frame-to-frame center displacement:
+  - raw = from adopted measurements
+  - KF = from filtered trajectory  
+  Lower KF jitter indicates smoother / more stable tracking.
+
+- **Innovation (residual) statistics**  
+  Innovation = measurement - predicted state (in pixels).
+  Smaller/tighter distribution indicates more stable association and filtering.
+
+- **Track continuity (segment length stats)**  
+  Track segments break when no measurement is adopted.
+  Longer segments = fewer dropouts.
+
+## Speed-bucket evaluation (optional)
+If `ground_truth_speed.csv` is provided, metrics can be stratified by speed bins.
+This shows how performance changes under faster motion.
+
+## Plots (common filenames)
+- `plot_topk_hist.png`  
+  Distribution of candidate scores / multiplicity for Stage 2.
+
+- `plot_topk_timeseries.png`  
+  Candidate behaviour over time (stability, drift).
+
+- `plot_bestscore_hist.png`  
+  Best-candidate confidence distribution.
+
+- `plot_innovation_hist_gateXX.png`  
+  KF innovation histogram for a given gate radius.
+
+- `plot_tracklen_hist_gateXX.png`  
+  Track segment length distribution (continuity).
+
+- `plot_by_speed_gateXX.png`  
+  Metrics stratified by speed bins (robustness under fast motion).
