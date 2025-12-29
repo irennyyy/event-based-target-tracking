@@ -31,6 +31,9 @@ Evaluated on DAVIS (240×180): `shapes_rotation`, `poster_6dof`, `dynamic_6dof`.
 | Poster_6DoF | 50 | 1.00 | 27.24 → 0.168 | Max track length 3213 |
 | Dynamic_6DoF | 50 | 1.00 | 29.13 → 0.154 | Stable under rapid dynamics |
 
+![tracking diagnostics](assets/dynamic_6dof/plot_innovation_hist_gate50.png)
+
+
 ## Pipeline
 **Stage 1 (SAE framing)**: time-decay surface with τ=10ms and Δt=2ms  
 **Stage 2 (Candidates)**: threshold + morphology + components + NMS + Top-K (K=8)  
