@@ -234,3 +234,13 @@ overlays*/
 C_event_frames/
 Old_video_compare/
 sae_frames/
+
+
+# Allow demo videos and figures under assets/
+!assets/**/*.mp4
+!assets/**/*.gif
+!assets/**/*.png
+!assets/**/*.jpg
+!assets/**/*.json
+!assets/**/*.csv
+!assets/**/*.md
